@@ -1,0 +1,17 @@
+a.selected {
+	background-color: #038AF2;
+	color: #FFF;
+	text-decoration: none;
+	padding: 5px;
+	font-weight: bold;
+}
+
+body{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.nostyle, table.nostyle th, table.nostyle td {border:0 !important;}
+table.nostyle th {background:none !important; text-align:left !important;}
+table.nostyle th, table.nostyle td {padding:3px 5px !important;}

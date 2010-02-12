@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <title>jQuery Delicious-textfield Plugin Demo</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/jquery-1.3.2.min.js" type="text/javascript"></script>
+  <script src="js/jquery.delicious_textfield.js" type="text/javascript"></script>
+</head>
+<body>
+  <h1>jQuery Delicious-Textfield Demo</h1>
+  <tbody><tr>
+    <td>
+      <label for="interests">Interests</label>
+    </td>
+    <td>
+      <input type="text" value="travel, clubbing, clubs, bars, hiking, restaurants" size="40" name="user[interested_in]" id="interests" class="input-text" gtbfieldid="17">
+      <br>
+      (Separated by comma)
+      <br>
+      <p>
+        <b>Examples</b> (Click to select):
+      </p>
+      <div id="links">
+        <a class="tag selected" href="#">bars</a>
+        <a class="tag selected" href="#">clubs</a>
+        <a class="tag selected" href="#">restaurants</a>
+        <a class="tag" href="#">parks</a>
+        <a class="tag selected" href="#">hiking</a>
+        <a class="tag" href="#">concerts</a>
+        <a class="tag" href="#">sports</a>
+        <a class="tag selected" href="#">clubbing</a>
+        <a class="tag" href="#">rowing</a>
+        <a class="tag" href="#">dining out</a>
+        <a class="tag selected" href="#">travel</a>
+        <a class="tag" href="#">art</a>
+        <a class="tag" href="#">film</a>
+        <a class="tag" href="#">photography</a>
+        <a class="tag" href="#">vegan</a>
+        <a class="tag" href="#">raw food</a>
+        <a class="tag" href="#">baking</a>
+        <a class="tag" href="#">meeting</a>
+        <a class="tag" href="#">rollerblade</a>
+        <a class="tag" href="#">hockey</a>
+        <a class="tag" href="#">traveling</a>
+        <a class="tag" href="#">twitter</a>
+        <a class="tag" href="#">pubs</a>
+        <a class="tag" href="#">walking</a>
+        <a class="tag" href="#">nature</a>
+        <a class="tag" href="#">cooking</a>
+        <a class="tag" href="#">exercise</a>
+        <a class="tag" href="#">networking</a>
+        <a class="tag" href="#">laughing</a>
+        <a class="tag" href="#">bugs</a>
+        <a class="tag" href="#">chicken</a>
+        <a class="tag" href="#">fish</a>
+        <a class="tag" href="#">tofu</a>
+        <a class="tag" href="#">party</a>
+        <a class="tag" href="#">festival</a>
+        <a class="tag" href="#">music</a>
+        <a class="tag" href="#">events</a>
+        <a class="tag" href="#">arts</a>
+        <a class="tag" href="#">marketing</a>
+        <a class="tag" href="#">social media</a>
+        <a class="tag" href="#">SEO</a>
+        <a class="tag" href="#">Biking</a>
+        <a class="tag" href="#">Movies</a>
+      </div>
+    </td>
+  </tr>
+</tbody>
+<script type="text/javascript">
+$(function() {
+  $("#interests").delicious_textfield({
+    option_links: $("#links")
+  });
+});
+</script>
+</body>
+</html>
